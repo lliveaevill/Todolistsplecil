@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="alert alert-dark" role="alert">
+  details
+</div>
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+  {% for item in object_list %}
+  <div class="alert alert-success" role="alert">
+    {{ item.title }}
+  </div>
+  <div class="alert alert-success" role="alert">
+    {{ item.memo }}
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}
+
